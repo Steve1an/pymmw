@@ -102,29 +102,33 @@ if __name__ == "__main__":
         
         dev, con, mss = None, None, None
 
-        if not win:
-
-            dev = usb_discover()
-            if len(dev) == 0: raise Exception('no device has been detected')
-    
-            dev = dev[0]        
-            print_log(' - '.join([dev._details_[k] for k in dev._details_]))
+        # if not win:
             
-            try:
-                xds_reset(dev)
-                xds_test(dev)
-            except Exception as e:
-                print_log(e)
+        #     dev = usb_discover()
+        #     if len(dev) == 0: raise Exception('no device has been detected')
+    
+        #     dev = dev[0]        
+        #     print_log(' - '.join([dev._details_[k] for k in dev._details_]))
+            
+        #     try:
+        #         xds_reset(dev)
+        #         xds_test(dev)
+        #     except Exception as e:
+        #         print_log(e)
 
-            prts = serial_discover(sid=dev._details_['serial'])
-            if len(prts) != 2: raise Exception('unknown device configuration has been detected')
+        #     prts = serial_discover(sid=dev._details_['serial'])
+        #     if len(prts) != 2: raise Exception('unknown device configuration has been detected')
     
-            if args.control_port is None: args.control_port = prts[0]
-            if args.data_port is None: args.data_port = prts[1]
+        #     if args.control_port is None: args.control_port = prts[0]
+        #     if args.data_port is None: args.data_port = prts[1]
     
-            if args.control_port != prts[0]: raise Exception('serial port {} is not available'.format(args.control_port))
-            if args.data_port != prts[1]: raise Exception('serial port {} is not available'.format(args.data_port))
+        #     if args.control_port != prts[0]: raise Exception('serial port {} is not available'.format(args.control_port))
+        #     if args.data_port != prts[1]: raise Exception('serial port {} is not available'.format(args.data_port))
         
+        #force the serial port
+        args.control_port='/dev/tty.SLAB_USBtoUART1'
+        args.data='/dev/tty.SLAB_USBtoUART'
+
         con = serial.Serial(args.control_port, 115200, timeout=0.01)        
         if con is None: raise Exception('not able to connect to control port')
 
