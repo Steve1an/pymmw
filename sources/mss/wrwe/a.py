@@ -27,17 +27,18 @@ _meta_ = {
     
     # define apps to run
     'app': {
-      '''  'rangeProfile':        ('plot_range_profile', 'capture_range_profile'),
+        'rangeProfile':        ('plot_range_profile', 'capture_range_profile'),
         'noiseProfile':        ('plot_range_profile', ), 
-        'detectedObjects':     ('plot_detected_objects', 'simple_cfar_clustering'),'''
-        'rangeAzimuthHeatMap': ('plot_range_azimuth_heat_map', )
-       # 'rangeDopplerHeatMap': ('plot_range_doppler_heat_map', )
+        'detectedObjects':     ('plot_detected_objects', 'simple_cfar_clustering'),
+        'rangeAzimuthHeatMap': ('plot_range_azimuth_heat_map', ),
+        'rangeDopplerHeatMap': ('plot_range_doppler_heat_map', )
     }
 }
 
 # ------------------------------------------------
 
 apps = {}
+
 verbose = True
 
 # ------------------------------------------------
@@ -106,10 +107,10 @@ def _conf_(cfg):
         if 'verbose' in c['_settings_'] and c['_settings_']['verbose'] is not None:
             verbose = c['_settings_']['verbose']
         
-        # xWR64xx and xWR68xx related
-        if key == 'xWR64xx' or key == 'xWR68xx':
+        # xWR14xx and xWR68xx related
+        if key == 'xWR14xx' or key == 'xWR68xx':
 
-            if key == 'xWR64xx':
+            if key == 'xWR14xx':
                 
                 if c['dfeDataOutputMode']['type'] is None:
                     c['dfeDataOutputMode']['type'] = 1  # legacy (no subframes)
