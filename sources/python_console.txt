@@ -1,1 +1,157 @@
-C:\Users\steve-AMD-PC\github.com\Steve1an\pymmw\sources>python -B pymmw.py -c COM3 -d COM4                                                                   (i) control port: COM3 - data port: COM4                                                                                                                                                                                                                                                                                  Please carry out a reset (NRST) of the device.                                                                                                               ******************************************                                                                                                                   xWR64xx MMW Demo 03.04.00.02                                                                                                                                 ******************************************                                                                                                                   mmwDemo:/>%                                                                                                                                                  %                                                                                                                                                            Skipped                                                                                                                                                      mmwDemo:/>sensorStop                                                                                                                                         sensorStop                                                                                                                                                   Ignored: Sensor is already stopped                                                                                                                           Done                                                                                                                                                         mmwDemo:/>flushCfg                                                                                                                                           flushCfg                                                                                                                                                     Done                                                                                                                                                         mmwDemo:/>dfeDataOutputMode 1                                                                                                                                dfeDataOutputMode 1                                                                                                                                          Done                                                                                                                                                         mmwDemo:/>channelCfg 15 7 0                                                                                                                                  channelCfg 15 7 0                                                                                                                                            Done                                                                                                                                                         mmwDemo:/>adcCfg 2 1                                                                                                                                         adcCfg 2 1                                                                                                                                                   Done                                                                                                                                                         mmwDemo:/>adcbufCfg -1 0 1 1 1                                                                                                                               adcbufCfg -1 0 1 1 1                                                                                                                                         Done                                                                                                                                                         mmwDemo:/>profileCfg 0 60 359 7 57.14 0 0 70 1 256 5209 0 0 30                                                                                               profileCfg 0 60 359 7 57.14 0 0 70 1 256 5209 0 0 30                                                                                                         Done                                                                                                                                                         mmwDemo:/>chirpCfg 0 0 0 0 0 0 0 1                                                                                                                           chirpCfg 0 0 0 0 0 0 0 1                                                                                                                                     Done                                                                                                                                                         mmwDemo:/>chirpCfg 1 1 0 0 0 0 0 2                                                                                                                           chirpCfg 1 1 0 0 0 0 0 2                                                                                                                                     Done                                                                                                                                                         mmwDemo:/>chirpCfg 2 2 0 0 0 0 0 4                                                                                                                           chirpCfg 2 2 0 0 0 0 0 4                                                                                                                                     Done                                                                                                                                                         mmwDemo:/>frameCfg 0 2 16 0 333.333 1 0                                                                                                                      frameCfg 0 2 16 0 333.333 1 0                                                                                                                                Done                                                                                                                                                         mmwDemo:/>lowPower 0 0                                                                                                                                       lowPower 0 0                                                                                                                                                 Done                                                                                                                                                         mmwDemo:/>guiMonitor -1 0 0 0 1 0 0                                                                                                                          guiMonitor -1 0 0 0 1 0 0                                                                                                                                    Done                                                                                                                                                         mmwDemo:/>cfarCfg -1 1 0 4 2 3 1 15 1                                                                                                                        cfarCfg -1 1 0 4 2 3 1 15 1                                                                                                                                  Done                                                                                                                                                         mmwDemo:/>multiObjBeamForming -1 1 0.5                                                                                                                       multiObjBeamForming -1 1 0.5                                                                                                                                 Done                                                                                                                                                         mmwDemo:/>clutterRemoval -1 0                                                                                                                                clutterRemoval -1 0                                                                                                                                          Done                                                                                                                                                         mmwDemo:/>calibDcRangeSig -1 0 -5 8 256                                                                                                                      calibDcRangeSig -1 0 -5 8 256                                                                                                                                Done                                                                                                                                                         mmwDemo:/>extendedMaxVelocity -1 0                                                                                                                           extendedMaxVelocity -1 0                                                                                                                                     Done                                                                                                                                                         mmwDemo:/>lvdsStreamCfg -1 0 0 0                                                                                                                             lvdsStreamCfg -1 0 0 0                                                                                                                                       Done                                                                                                                                                         mmwDemo:/>compRangeBiasAndRxChanPhase 0.0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0                                                              compRangeBiasAndRxChanPhase 0.0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0                                                                        Done                                                                                                                                                         mmwDemo:/>measureRangeBiasAndRxChanPhase 0 1.5 0.2                                                                                                           measureRangeBiasAndRxChanPhase 0 1.5 0.2                                                                                                                     Done                                                                                                                                                         mmwDemo:/>CQRxSatMonitor 0 3 5 121 0                                                                                                                         CQRxSatMonitor 0 3 5 121 0                                                                                                                                   Done                                                                                                                                                         mmwDemo:/>CQSigImgMonitor 0 127 4                                                                                                                            CQSigImgMonitor 0 127 4                                                                                                                                      Done                                                                                                                                                         mmwDemo:/>analogMonitor 0 0                                                                                                                                  analogMonitor 0 0                                                                                                                                            Done                                                                                                                                                         mmwDemo:/>aoaFovCfg -1 -90 90 -90 90                                                                                                                         aoaFovCfg -1 -90 90 -90 90                                                                                                                                   Done                                                                                                                                                         mmwDemo:/>cfarFovCfg -1 1 -1 1.0                                                                                                                             cfarFovCfg -1 1 -1 1.0                                                                                                                                       Done                                                                                                                                                         mmwDemo:/>sensorStart                                                                                                                                                                                                                                                                                                     Start frequency (GHz):          60                                                                                                                           Slope (MHz/us):                 70                                                                                                                           Sampling rate (MS/s):           5.21                                                                                                                         Sweep bandwidth (GHz):          3.44                                                                                                                         Frame periodicity (ms):         333.333                                                                                                                                                                                                                                                                                   Loops per frame:                16                                                                                                                           Chirps per loop:                3                                                                                                                            Samples per chirp:              256                                                                                                                          Chirps per frame:               48                                                                                                                           Samples per frame:              12288                                                                                                                        Receive antennas:               4                                                                                                                                                                                                                                                                                         Azimuth antennas:               2                                                                                                                            Elevation antennas:             1                                                                                                                            Virtual antennas:               12                                                                                                                           Azimuth resolution (°):         14.5                                                                                                                                                                                                                                                                                      Range resolution (m):           0.0436                                                                                                                       Range bin (m):                  0.0436                                                                                                                       Range depth (m):                11.1621                                                                                                                      Unambiguous range (m):          8.9297                                                                                                                       Range bins:                     256                                                                                                                                                                                                                                                                                       Doppler resolution (m/s):       0.1252                                                                                                                       Maximum Doppler (m/s):          1.0013                                                                                                                       Doppler bins:                   16                                                                                                                                                                                                                                                                                        sensorStart                                                                                                                                                  Error: Full configuration must be provided before sensor can be started the first time                                                                       Error -1                                                                                                                                                     mmwDemo:/>^C                                                                                                                                                 C:\Users\steve-AMD-PC\github.com\Steve1an\pymmw\sources>              
+
+mmwDemo:/>% ***************************************************************
+Skipped
+
+mmwDemo:/>% Created for SDK ver:03.04
+Skipped
+
+mmwDemo:/>% Created using Visualizer ver:3.4.0.0
+Skipped
+
+mmwDemo:/>% Frequency:60
+Skipped
+
+mmwDemo:/>% Platform:xWR68xx_AOP
+Skipped
+
+mmwDemo:/>% Scene Classifier:best_range_res
+Skipped
+
+mmwDemo:/>% Azimuth Resolution(deg):30 + 30
+Skipped
+
+mmwDemo:/>% Range Resolution(m):0.044
+Skipped
+
+mmwDemo:/>% Maximum unambiguous Range(m):9.02
+Skipped
+
+mmwDemo:/>% Maximum Radial Velocity(m/s):1
+Skipped
+
+mmwDemo:/>% Radial velocity resolution(m/s):0.13
+Skipped
+
+mmwDemo:/>% Frame Duration(msec):100
+Skipped
+
+mmwDemo:/>% Range Detection Threshold (dB):15
+Skipped
+
+mmwDemo:/>% Doppler Detection Threshold (dB):15
+Skipped
+
+mmwDemo:/>% Range Peak Grouping:enabled
+Skipped
+
+mmwDemo:/>% Doppler Peak Grouping:enabled
+Skipped
+
+mmwDemo:/>% Static clutter removal:disabled
+Skipped
+
+mmwDemo:/>% Angle of Arrival FoV: Full FoV
+Skipped
+
+mmwDemo:/>% Range FoV: Full FoV
+Skipped
+
+mmwDemo:/>% Doppler FoV: Full FoV
+Skipped
+
+mmwDemo:/>% ***************************************************************
+Skipped
+
+mmwDemo:/>sensorStop
+Ignored: Sensor is already stopped
+
+Done
+
+mmwDemo:/>flushCfg
+Done
+
+mmwDemo:/>dfeDataOutputMode 1
+Done
+
+mmwDemo:/>channelCfg 15 7 0
+Done
+
+mmwDemo:/>adcCfg 2 1
+Done
+
+mmwDemo:/>adcbufCfg -1 0 1 1 1
+Done
+
+mmwDemo:/>profileCfg 0 60 359 7 57.14 0 0 70 1 256 5209 0 0 30
+Done
+
+mmwDemo:/>chirpCfg 0 0 0 0 0 0 0 1
+Done
+
+mmwDemo:/>chirpCfg 1 1 0 0 0 0 0 2
+Done
+
+mmwDemo:/>chirpCfg 2 2 0 0 0 0 0 4
+Done
+
+mmwDemo:/>frameCfg 0 2 16 0 100 1 0
+Done
+
+mmwDemo:/>lowPower 0 0
+Done
+
+mmwDemo:/>guiMonitor -1 1 1 0 0 0 1
+Done
+
+mmwDemo:/>cfarCfg -1 0 2 8 4 3 0 15 1
+Done
+
+mmwDemo:/>cfarCfg -1 1 0 4 2 3 1 15 1
+Done
+
+mmwDemo:/>multiObjBeamForming -1 1 0.5
+Done
+
+mmwDemo:/>clutterRemoval -1 0
+Done
+
+mmwDemo:/>calibDcRangeSig -1 0 -5 8 256
+Done
+
+mmwDemo:/>extendedMaxVelocity -1 0
+Done
+
+mmwDemo:/>lvdsStreamCfg -1 0 0 0
+Done
+
+mmwDemo:/>compRangeBiasAndRxChanPhase 0.0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0 1 0 -1 0
+Done
+
+mmwDemo:/>measureRangeBiasAndRxChanPhase 0 1.5 0.2
+Done
+
+mmwDemo:/>CQRxSatMonitor 0 3 5 121 0
+Done
+
+mmwDemo:/>CQSigImgMonitor 0 127 4
+Done
+
+mmwDemo:/>analogMonitor 0 0
+Done
+
+mmwDemo:/>aoaFovCfg -1 -90 90 -90 90
+Done
+
+mmwDemo:/>cfarFovCfg -1 0 0 8.92
+Done
+
+mmwDemo:/>cfarFovCfg -1 1 -1 1.00
+Done
+
+mmwDemo:/>sensorStart
+Debug: Init Calibration Status = 0xffe
+
+Done
+
+mmwDemo:/>sensorStop
+Done
